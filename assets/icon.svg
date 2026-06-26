@@ -1,17 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
+    <linearGradient id="v2aGrad" x1="96" y1="120" x2="416" y2="392" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2E7CF6"/>
+      <stop offset="1" stop-color="#7B3FE4"/>
     </linearGradient>
   </defs>
-  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
-  <!-- play triangle -->
-  <path d="M150 176 L150 336 L278 256 Z" fill="#ffffff"/>
-  <!-- audio waveform -->
-  <g fill="#ffffff">
-    <rect x="312" y="226" width="24" height="60" rx="12"/>
-    <rect x="352" y="186" width="24" height="140" rx="12"/>
-    <rect x="392" y="216" width="24" height="80" rx="12"/>
+  <g transform="translate(-18 0)">
+    <!-- Play button: rounded triangle on the left -->
+    <path d="M 138 164 L 138 348 L 250 256 Z"
+          fill="url(#v2aGrad)" stroke="url(#v2aGrad)" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Arrow: small right-pointing chevron in the middle -->
+    <path d="M 268 226 L 304 256 L 268 286"
+          fill="none" stroke="url(#v2aGrad)" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Waveform: vertical bars of varying heights on the right -->
+    <rect x="330" y="226" width="24" height="60" rx="12" fill="url(#v2aGrad)"/>
+    <rect x="368" y="186" width="24" height="140" rx="12" fill="url(#v2aGrad)"/>
+    <rect x="406" y="206" width="24" height="100" rx="12" fill="url(#v2aGrad)"/>
   </g>
 </svg>
