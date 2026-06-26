@@ -1,17 +1,18 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="v2aGrad" x1="96" y1="120" x2="416" y2="392" gradientUnits="userSpaceOnUse">
+    <linearGradient id="v2aGrad" x1="60" y1="70" x2="452" y2="442" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#2E7CF6"/>
       <stop offset="1" stop-color="#7B3FE4"/>
     </linearGradient>
   </defs>
-  <g transform="translate(-16 0)">
-    <!-- Play button: bold rounded triangle on the left -->
+  <!-- Rounded-square (squircle) gradient background to match the other icons -->
+  <rect x="36" y="36" width="440" height="440" rx="100" fill="url(#v2aGrad)"/>
+  <!-- White glyph: play triangle + waveform, scaled and centered on the tile -->
+  <g transform="translate(256 256) scale(0.724) translate(-295 -256)">
     <path d="M 112 132 L 112 380 L 270 256 Z"
-          fill="url(#v2aGrad)" stroke="url(#v2aGrad)" stroke-width="48" stroke-linejoin="round" stroke-linecap="round"/>
-    <!-- Waveform: three chunky bars of varying heights on the right -->
-    <rect x="334" y="204" width="44" height="104" rx="22" fill="url(#v2aGrad)"/>
-    <rect x="396" y="148" width="44" height="216" rx="22" fill="url(#v2aGrad)"/>
-    <rect x="458" y="184" width="44" height="144" rx="22" fill="url(#v2aGrad)"/>
+          fill="#ffffff" stroke="#ffffff" stroke-width="48" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="334" y="204" width="44" height="104" rx="22" fill="#ffffff"/>
+    <rect x="396" y="148" width="44" height="216" rx="22" fill="#ffffff"/>
+    <rect x="458" y="184" width="44" height="144" rx="22" fill="#ffffff"/>
   </g>
 </svg>
