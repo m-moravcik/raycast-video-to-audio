@@ -1,0 +1,52 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "video-to-audio",
+  "title": "Video to Audio",
+  "description": "Extract the audio track from a video file and save it as M4A or MP3.",
+  "icon": "command-icon.png",
+  "author": "michal_moravcik",
+  "categories": [
+    "Media"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "convert",
+      "title": "Convert Video to Audio",
+      "subtitle": "Video to Audio",
+      "description": "Extract audio from a video file as M4A or MP3",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "ffmpegPath",
+      "title": "ffmpeg Path",
+      "description": "Absolute path to the ffmpeg binary. Defaults to the Homebrew location.",
+      "type": "textfield",
+      "required": false,
+      "default": "/opt/homebrew/bin/ffmpeg"
+    }
+  ],
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.104.20",
+    "@raycast/utils": "^2.2.7"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.9"
+  }
+}

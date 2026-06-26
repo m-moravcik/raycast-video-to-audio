@@ -4,3 +4,4 @@ dist/
 *.log
 .raycast-swift-build/
 *.tsbuildinfo
+raycast-env.d.ts
