@@ -2,7 +2,7 @@
 
 Extract audio from a video without opening an editor. Select a file in Finder, run **Convert Video to Audio** in Raycast, and save an M4A or MP3 beside the original.
 
-![Extension icon](assets/command-icon.png)
+<img src="assets/command-icon.png" alt="Video to Audio extension icon" width="96" height="96">
 
 ## Features
 
