@@ -1,7 +1,7 @@
 # Design: raycast-video-to-audio
 
 **Date:** 2026-06-26
-**Status:** Approved (pre-implementation)
+**Status:** Historical design notes. See README.md and source for current behavior.
 
 ## Purpose
 
@@ -79,7 +79,7 @@ interpretation or injection surface.
   to the user beyond normal progress.
 
 `-vn` drops the video stream. The extension computes a non-colliding output path itself,
-so no `-y`/`-n` overwrite flag is needed.
+and uses `-y` so an AAC retry can replace its own partial stream-copy output.
 
 ## Output naming
 
